@@ -47,7 +47,7 @@ function Header() {
                 
                 {/* Substitua a rota para o carrinho pela imagem */}
                 <Link to="/carrinho">
-                    <img src="public/cart-fill.svg" alt="Carrinho de Compras" />
+                    <img src="public/icons8-carrinho-de-compras-64 (1).png" alt="Carrinho de Compras" />
                 </Link>
             </nav>
         </header>
