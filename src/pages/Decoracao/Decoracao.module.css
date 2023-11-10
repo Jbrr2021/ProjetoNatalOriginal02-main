@@ -1,0 +1,11 @@
+body {
+    background-color: white; /* Substitua "lightgray" pelo nome da cor cinza claro desejado */
+  }
+  
+
+.forma{
+    color: beige;
+}
+.spacer {
+    margin-top: 5vw; /* Exemplo de margem responsiva */
+  }

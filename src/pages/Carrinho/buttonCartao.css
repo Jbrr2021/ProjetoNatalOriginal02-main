@@ -1,0 +1,56 @@
+/* Estilos para o formulário de cartão de crédito */
+.form-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-label {
+    font-weight: bold;
+    font-size: 14px; /* Tamanho da label reduzido */
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos para o botão de finalizar compra e continuar comprando */
+  .btn-container {
+    display: flex;
+    justify-content: center; /* Centraliza os botões */
+    margin-top: 20px;
+  }
+  
+  .btn-primary, .btn-success {
+    margin: 0 10px; /* Adiciona espaçamento entre os botões */
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .btn-primary:hover, .btn-success:hover {
+    opacity: 0.8;
+  }
+  

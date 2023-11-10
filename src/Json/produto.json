@@ -1,0 +1,197 @@
+
+{
+  "DecoracaoBolas": [
+   
+    {
+      "id": 1,
+      "nome": "Bolas Douradas",
+      "valor": "R$16,99",
+      "detalhes": "Pacote com 10 bolas de decoração",
+      "img": "https://img.elo7.com.br/product/zoom/2A70A7D/9-bolas-natal-lindas-6cm-texturas-arabescos-lisas-e-foscas-bolas-arvore.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Bolas de Prata ",
+      "valor": 15,
+      "detalhes": "Pacote com 10 bolas de decoração",
+      "img": "https://img.elo7.com.br/product/zoom/2A70B46/9-bolas-natal-grafite-6cm-arabescos-texturas-lisas-e-foscas-decoracao-natal.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "Bola de Natal dos Desejos",
+      "valor": 15,
+      "detalhes": "Pacote com 10 bolas de decoração",
+      "img": "https://img.elo7.com.br/product/zoom/34CAAEE/bola-de-natal-dos-desejos-enfeite-natal.jpg"
+    },
+    {
+      "id": 4,
+      "nome": "Bolas de Natal em patchwork",
+      "valor": 16,
+      "detalhes": "Pacote com 10 bolas de decoração",
+      "img": "https://img.elo7.com.br/product/zoom/4C2C156/bolas-de-natal-em-patchwork.jpg"
+    },
+    {
+      "id": 5,
+      "nome": "Bolas de Prata ",
+      "valor": 15,
+      "detalhes": "Pacote com 10 bolas de decoração",
+      "img": "https://img.elo7.com.br/product/zoom/2A70B46/9-bolas-natal-grafite-6cm-arabescos-texturas-lisas-e-foscas-decoracao-natal.jpg"
+    },
+    {
+      "id": 6,
+      "nome": "Bola de Natal dos Desejos",
+      "valor": 15,
+      "detalhes": "Pacote com 10 bolas de decoração",
+      "img": "https://img.elo7.com.br/product/zoom/34CAAEE/bola-de-natal-dos-desejos-enfeite-natal.jpg"
+    }
+  
+  ],
+  "DecoracaoGuirlandas": [
+    {
+      "id": 7,
+      "nome": "Guirlanda Natalina",
+      "valor": 30,
+      "detalhes": "Guirlanda Natalina",
+      "img": "https://img.elo7.com.br/product/zoom/22F4765/guirlanda-natalina-guirlanda-natalina.jpg"
+    },
+    {
+      "id": 8,
+      "nome": "Guirlanda de Porta e Parede com Flores",
+      "valor": 30,
+      "detalhes": "Guirlandas decorativas para festas",
+      "img": "https://img.elo7.com.br/product/zoom/43883FD/guirlanda-de-porta-com-flores-parede.jpg"
+    },
+    {
+      "id": 9,
+      "nome": "Guirlanda Natal Glamour Rosa",
+      "valor": 30,
+      "detalhes": "Guirlanda Natal Glamour Rosa",
+      "img": "https://img.elo7.com.br/product/zoom/4C5F6E4/guirlanda-natal-glamour-rosa-60cm-guirlanda-natalina-grande.jpg"
+    }
+    
+  ],
+
+  "DecoracaoPresepio": [
+    {
+      "id": 10,
+      "nome": "DecoracaoPresepio",
+      "valor": 50,
+      "detalhes": "Presépio Rustico",
+      "img": "https://img.elo7.com.br/product/zoom/1AB95A5/presepio-rusrico-sao-jose.jpg"
+    },
+    {
+      "id": 11,
+      "nome": "Presépio de Encaixe",
+      "valor": 50,
+      "detalhes": "Presépio de Encaixe",
+      "img": "https://img.elo7.com.br/product/zoom/3DCC6A1/presepio-de-encaixe-43cm-em-gesso-cru-encaixe.jpg"
+    },
+    {
+      "id": 12,
+      "nome": "Mini Presépio Rústico- Natal",
+      "valor": 50,
+      "detalhes": "Mini Presépio Rústico- Natal",
+      "img": "https://img.elo7.com.br/product/zoom/3E98588/mini-presepio-rustico.jpg"
+    } 
+  ],
+
+
+  "EnfeitesArtesanato": [
+    {
+      "id": 13,
+      "nome": "EnfeitesArtesanato",
+      "valor": 50,
+      "detalhes": "Presepio de Natal para decoração",
+      "img": "https://img.elo7.com.br/product/zoom/466712F/enfeites-de-natal-amigurumi-biscoito.jpg"
+    },
+    {
+      "id": 14,
+      "nome": "EnfeitesArtesanato",
+      "valor": 50,
+      "detalhes": "Presepio de Natal para decoração",
+      "img": "https://img.elo7.com.br/product/zoom/461D427/kit-enfeites-de-natal-35-unid-arvore-de-natal.jpg"
+    },
+    {
+      "id": 15,
+      "nome": "EnfeitesArtesanato",
+      "valor": 50,
+      "detalhes": "Presepio de Natal para decoração",
+      "img": "https://img.elo7.com.br/product/zoom/461D427/kit-enfeites-de-natal-35-unid-arvore-de-natal.jpg"
+    }
+  ],
+
+  "EnfeitesBoneco": [
+    {
+      "id": 16,
+      "nome": "Boneco de Neve em biscuit",
+      "valor": 50,
+      "detalhes": "Boneco de Neve em biscuit",
+      "img": "https://img.elo7.com.br/product/zoom/C12E3/enfeite-de-boneco-de-neve-em-biscuit.jpg"
+    },
+    {
+      "id": 17,
+      "nome": "Boneco de Neve em biscuit",
+      "valor": 50,
+      "detalhes": "Boneco de Neve em biscuit",
+      "img": "https://img.elo7.com.br/product/zoom/C12E3/enfeite-de-boneco-de-neve-em-biscuit.jpg"
+    },
+    {
+      "id": 18,
+      "nome": "Boneco de Neve em biscuit",
+      "valor": 50,
+      "detalhes": "Boneco de Neve em biscuit",
+      "img": "https://img.elo7.com.br/product/zoom/C12E3/enfeite-de-boneco-de-neve-em-biscuit.jpg"
+    }
+  ],
+  "EnfeitesMeias": [
+    {
+      "id": 19,
+      "nome": "EnfeitesMeias",
+      "valor": 50,
+      "detalhes": "Meia natalina Papai Noel em feltro",
+      "img": "https://img.elo7.com.br/product/zoom/F41C8B/meia-natalina-papai-noel-em-feltro-tecido.jpg"
+    },
+    {
+      "id": 20,
+      "nome": "EnfeitesMeias",
+      "valor": 50,
+      "detalhes": "Meia natalina Papai Noel em feltro",
+      "img": "https://img.elo7.com.br/product/zoom/F41C8B/meia-natalina-papai-noel-em-feltro-tecido.jpg"
+    },
+    {
+      "id": 21,
+      "nome": "EnfeitesMeias",
+      "valor": 50,
+      "detalhes": "Meia natalina Papai Noel em feltro",
+      "img": "https://img.elo7.com.br/product/zoom/F41C8B/meia-natalina-papai-noel-em-feltro-tecido.jpg"
+    }
+  ],
+  "IluminacaoPisca": [
+    {
+      "id": 22,
+      "nome": "IluminacaoPisca",
+      "valor": 50,
+      "detalhes": "Presepio de Natal para decoração",
+      "img": "https://img.elo7.com.br/product/zoom/11626D6/luz-de-fada-organza-pompom-champagne-50-lampadas-de-led.jpg"
+
+    },
+    {
+      "id": 23,
+      "nome": "IluminacaoPisca",
+      "valor": 50,
+      "detalhes": "Presepio de Natal para decoração",
+      "img": "https://img.elo7.com.br/product/zoom/11626D6/luz-de-fada-organza-pompom-champagne-50-lampadas-de-led.jpg"
+
+    },
+    {
+      "id": 24,
+      "nome": "IluminacaoPisca",
+      "valor": 50,
+      "detalhes": "Presepio de Natal para decoração",
+      "img": "https://img.elo7.com.br/product/zoom/11626D6/luz-de-fada-organza-pompom-champagne-50-lampadas-de-led.jpg"
+
+    }
+
+  ]  
+
+}

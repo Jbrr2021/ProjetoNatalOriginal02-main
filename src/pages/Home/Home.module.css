@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600&display=swap');
+
+.container{
+    width: 100%;
+    min-height: 86vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.img{
+    height: 500px;
+}
+.para{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.para span{
+    color: var(--red);
+    
+}
+.btn{
+    width: 205px;
+    height: 50px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    border: 0;
+    border-radius: 8px;
+    background-color: var(--red);
+    color: var(--white);
+    cursor: pointer;
+
+}
+.btn:hover{
+ background-color: var(--primary);
+}
+
+/* Home.module.css */
+
+.carousel {
+    width: 100%;
+    max-width: 800px;
+    height: 315px;
+    margin: 0 auto;
+    
+  }
+  
+  .carousel .slide {
+    position: relative;
+  }
+  
+  .carousel .slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .spacer {
+    margin-top: 5vw; /* Exemplo de margem responsiva */
+  }
+  
+  p {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px; /* Define o tamanho da fonte */
+    font-style: bold; /* Define o estilo da fonte */
+    /* border-bottom: 1px solid black; */
+  }
+
+  /* .shape {
+    border-radius: 20px;
+    width: 375px;
+    height: 375px;
+    background-image: url('public/img.png');
+    background-size: cover;
+    background-position: center;
+  } */
+
+  p.underline {
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 2px;
+  }
+  
