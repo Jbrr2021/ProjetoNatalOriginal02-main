@@ -8,6 +8,7 @@ import Footer from "../../components/Footer";
 function Carrinho() {
   const { id } = useParams();
   const [data, setData] = useState([]);
+  const [val, setVal] = useState(0);
   const [formData, setFormData] = useState({
     nome: "",
     numeroCartao: "",
@@ -15,13 +16,27 @@ function Carrinho() {
     codigoSeguranca: "",
   });
   const [compraFinalizada, setCompraFinalizada] = useState(false);
+  const [total, setTotal] = useState(0);
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/produtos/${id}`)
+      .get("http://localhost:3000/DecoracaoBolas/" + id)
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
-  }, [id]);
+  }, []);
+
+  useEffect(() => {
+    // Calcular o total quando o estado val ou data for alterado
+    const calcularTotal = () => {
+      return (data.valor * val).toLocaleString("pt-BR", {
+        style: "currency",
+        currency: "BRL",
+      });
+    };
+
+    // Atualizar o total sempre que o estado val ou data for alterado
+    setTotal(calcularTotal());
+  }, [val, data]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -48,18 +63,57 @@ function Carrinho() {
   return (
     <>
       <Header />
-      <div>
-        <h2>teste de renderização</h2>
-        <img
-          src={data.img}
-          style={{ width: "150px", height: "150px" }}
-          alt={data.nome}
-        />
-        <br />
-        <h3>Nome do produto</h3>
-        {data.nome} <br />
-        <h3>Valor do produto</h3>
-        R$ {data.valor},00
+      <div style={{ textAlign: "center" }}>
+        <h2>Carrinho de compras</h2>
+        <div style={{ display: "inline-block", textAlign: "left" }}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <div>
+              <img
+                src={data.img}
+                style={{
+                  width: "180px",
+                  height: "180px",
+                  display: "block",
+                  margin: "auto",
+                }}
+                alt={data.nome}
+              />
+            </div>
+            <div>
+              <h3>Nome do produto</h3>
+              {data.nome}
+            </div>
+            <div>
+              <h3>Valor do produto</h3>
+              {data.valor}
+            </div>
+            <div>
+              <label htmlFor="inputState" className="form-label">
+                Quantidade de produtos:
+              </label>
+              <br />
+              <select onChange={(e) => setVal(e.target.value)}>
+                <option value="" disabled>
+                  Quantidades do produto:
+                </option>
+                <option value={1}>1</option>
+                <option value={2}>2</option>
+                <option value={3}>3</option>
+                <option value={4}>4</option>
+                <option value={5}>5</option>
+                <option value={6}>6</option>
+              </select>
+            </div>
+            <br />
+            <div>Total: {total} </div>
+          </div>
+        </div>
       </div>
       {!compraFinalizada ? (
         <>
@@ -122,7 +176,7 @@ function Carrinho() {
             </div>
             <div className="btn-container">
               <button type="submit" className="btn btn-success">
-                Finalizar Compra
+                Fechar Pedido
               </button>
               <Link to="/" className="btn btn-primary">
                 Continuar Comprando
@@ -140,7 +194,7 @@ function Carrinho() {
         </>
       ) : (
         <div>
-          <h3>Obrigado por comprar em nossa loja!</h3>
+          <strong>Sucesso!</strong> Você conseguiu, parabéns!
         </div>
       )}
       <Footer />

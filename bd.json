@@ -12,35 +12,35 @@
     {
       "id": 2,
       "nome": "Bolas de Prata ",
-      "valor": 15,
+      "valor": "1,99",
       "detalhes": "Pacote com 10 bolas de decoração",
       "img": "https://img.elo7.com.br/product/zoom/2A70B46/9-bolas-natal-grafite-6cm-arabescos-texturas-lisas-e-foscas-decoracao-natal.jpg"
     },
     {
       "id": 3,
       "nome": "Bola de Natal dos Desejos",
-      "valor": 15,
+      "valor": "3,45",
       "detalhes": "Pacote com 10 bolas de decoração",
       "img": "https://img.elo7.com.br/product/zoom/34CAAEE/bola-de-natal-dos-desejos-enfeite-natal.jpg"
     },
     {
       "id": 4,
       "nome": "Bolas de Natal em patchwork",
-      "valor": 16,
+      "valor": "35,99",
       "detalhes": "Pacote com 10 bolas de decoração",
       "img": "https://img.elo7.com.br/product/zoom/4C2C156/bolas-de-natal-em-patchwork.jpg"
     },
     {
       "id": 5,
       "nome": "Bolas de Prata ",
-      "valor": 15,
+      "valor": "65,90",
       "detalhes": "Pacote com 10 bolas de decoração",
       "img": "https://img.elo7.com.br/product/zoom/2A70B46/9-bolas-natal-grafite-6cm-arabescos-texturas-lisas-e-foscas-decoracao-natal.jpg"
     },
     {
       "id": 6,
       "nome": "Bola de Natal dos Desejos",
-      "valor": 15,
+      "valor": "1.600,00",
       "detalhes": "Pacote com 10 bolas de decoração",
       "img": "https://img.elo7.com.br/product/zoom/34CAAEE/bola-de-natal-dos-desejos-enfeite-natal.jpg"
     }
