@@ -3,10 +3,13 @@
 /* Carrinho.css */
 
 /* Estilo para o contêiner principal */
-
 .form-container {
-  max-width: 400px;
+  max-width: 800px;
   margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -29,6 +32,16 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+/* Estilo específico para os campos do cliente */
+.form-container-cliente .form-group {
+  width: calc(50% - 10px);
+}
+
+/* Estilo específico para os campos do cartão */
+.form-container-cartao .form-group {
+  width: 100%;
 }
 
 /* Estilo para o seletor de quantidade e o total */
@@ -70,4 +83,6 @@
 .mensagem-cadastro {
   color: red;
   margin-top: 10px;
+}
+
 }

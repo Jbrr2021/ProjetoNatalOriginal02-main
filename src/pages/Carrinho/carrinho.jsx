@@ -15,12 +15,24 @@ function Carrinho() {
     dataValidade: "",
     codigoSeguranca: "",
   });
+  const [clienteFormData, setClienteFormData] = useState({
+    nomeCompleto: "",
+    cpf: "",
+    email: "",
+    rua: "",
+    complemento: "",
+    cidade: "",
+    estado: "",
+    cep: "",
+    telefone: "",
+  });
   const [compraFinalizada, setCompraFinalizada] = useState(false);
   const [total, setTotal] = useState(0);
+  const [clienteCadastrado, setClienteCadastrado] = useState(false);
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/DecoracaoBolas/" + id)
+      .get("http://localhost:3000/DecoracaoBolas/${id}")
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
   }, []);
@@ -46,6 +58,14 @@ function Carrinho() {
     });
   };
 
+  const handleClienteChange = (e) => {
+    const { name, value } = e.target;
+    setClienteFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Formulário submetido:", formData);
@@ -60,12 +80,29 @@ function Carrinho() {
     }
   };
 
+  const handleClienteSubmit = (e) => {
+    e.preventDefault();
+    if (
+      clienteFormData.nomeCompleto &&
+      clienteFormData.cpf &&
+      clienteFormData.email &&
+      clienteFormData.rua &&
+      clienteFormData.complemento &&
+      clienteFormData.cidade &&
+      clienteFormData.estado &&
+      clienteFormData.cep &&
+      clienteFormData.telefone
+    ) {
+      setClienteCadastrado(true);
+    }
+  };
+
   return (
     <>
       <Header />
       <div style={{ textAlign: "center" }}>
         <h2>Carrinho de compras</h2>
-        <div style={{ display: "inline-block", textAlign: "left" }}>
+        <div style={{ display: "flex", justifyContent: "space-around" }}>
           <div
             style={{
               display: "flex",
@@ -117,7 +154,12 @@ function Carrinho() {
       </div>
       {!compraFinalizada ? (
         <>
-          <form onSubmit={handleSubmit} className="form-container">
+          {/* Formulário do Cartão */}
+          <form
+            className="for-container-cartao"
+            onSubmit={handleSubmit}
+            className="form-container"
+          >
             <div className="form-group">
               <label htmlFor="numeroCartao" className="form-label">
                 Número do Cartão
@@ -188,9 +230,120 @@ function Carrinho() {
           formData.dataValidade &&
           formData.codigoSeguranca ? null : (
             <div className="mensagem-cadastro">
-              Cadastre um cartão para continuar sua compra.
+              <strong>Cadastre um cartão para continuar sua compra.</strong>
             </div>
           )}
+          {/* Formulário de Cadastro de Cliente */}
+          <form>
+            <label htmlFor="nomeCompleto" className="form-label">
+              Nome Completo
+            </label>
+            <input
+              type="text"
+              className="form-control"
+              id="nomeCompleto"
+              name="nomeCompleto"
+              value={clienteFormData.nomeCompleto}
+              onChange={handleClienteChange}
+              required
+            />
+            <label htmlFor="nomeCompleto" className="form-label">
+              CPF
+            </label>
+            <input
+              type="text"
+              className="form-control"
+              id="cpf"
+              name="cpf"
+              value={clienteFormData.cpf}
+              onChange={handleClienteChange}
+              required
+            />
+            <label htmlFor="nomeCompleto" className="form-label">
+              E-mail
+            </label>
+            <input
+              type="text"
+              className="form-control"
+              id="email"
+              name="email"
+              value={clienteFormData.email}
+              onChange={handleClienteChange}
+              required
+            />
+            <label htmlFor="nomeCompleto" className="form-label">
+              Rua
+            </label>
+            <input
+              type="text"
+              className="form-control"
+              id="rua"
+              name="rua"
+              value={clienteFormData.rua}
+              onChange={handleClienteChange}
+              required
+            />
+            <label htmlFor="nomeCompleto" className="form-label">
+              Complemento
+            </label>
+            <input
+              type="text"
+              className="form-control"
+              id="complemento"
+              name="complemento"
+              value={clienteFormData.complemento}
+              onChange={handleClienteChange}
+              required
+            />
+            <label htmlFor="nomeCompleto" className="form-label">
+              Cidade
+            </label>
+            <input
+              type="text"
+              className="form-control"
+              id="cidade"
+              name="cidade"
+              value={clienteFormData.cidade}
+              onChange={handleClienteChange}
+              required
+            />
+            <label htmlFor="nomeCompleto" className="form-label">
+              Estado
+            </label>
+            <input
+              type="text"
+              className="form-control"
+              id="estado"
+              name="estado"
+              value={clienteFormData.estado}
+              onChange={handleClienteChange}
+              required
+            />
+            <label htmlFor="nomeCompleto" className="form-label">
+              CEP
+            </label>
+            <input
+              type="text"
+              className="form-control"
+              id="cep"
+              name="cep"
+              value={clienteFormData.cep}
+              onChange={handleClienteChange}
+              required
+            />
+            <label htmlFor="nomeCompleto" className="form-label">
+              Telefone
+            </label>
+            <input
+              type="text"
+              className="form-control"
+              id="nomeCompleto"
+              name="nomeCompleto"
+              value={clienteFormData.telefone}
+              onChange={handleClienteChange}
+              required
+            />
+          </form>
         </>
       ) : (
         <div>
